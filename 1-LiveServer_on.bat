@@ -39,7 +39,7 @@ goto Fin
     set an=%%a 
     )
 
-    for /f "tokens=*" %%a in ( 'docker ps -a ^| findstr /C:"NodeDevLiveServer"' ^| findstr /C:"Exited (" ) do ( 
+    for /f "tokens=*" %%a in ( 'docker ps -a ^| findstr /C:"NodeDevLiveServer" ^| findstr /C:"Exited ("' ) do ( 
     set ax=%%a 
     )
 
