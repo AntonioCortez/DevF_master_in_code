@@ -39,7 +39,7 @@ goto Fin
     set an=%%a 
     )
 
-    for /f "tokens=*" %%a in ( 'docker ps -a --filter "exited=0" ^| findstr /C:"NodeDevLiveServer"' ) do ( 
+    for /f "tokens=*" %%a in ( 'docker ps -a ^| findstr /C:"NodeDevLiveServer"' ^| findstr /C:"Exited (" ) do ( 
     set ax=%%a 
     )
 
@@ -47,12 +47,12 @@ goto Fin
         
         if "%an:~-18%"=="NodeDevLiveServer " (
             echo THE CONTAINER IS RUNNING
-            ) else (
-                if "%an%"=="" (
-                    ECHO DOCKER TO RUN CONTAINER & echo.
-                    docker run -it -p 80:8080 --name NodeDevLiveServer -v "%cd%":/home/node/app devnode_global_liveserver-npm:15.5.0-buster bash
-                )
+        ) else (
+            if "%an%"=="" (
+                ECHO DOCKER TO RUN CONTAINER & echo.
+                docker run -it -p 80:8080 --name NodeDevLiveServer -v "%cd%":/home/node/app devnode_global_liveserver-npm:15.5.0-buster bash
             )
+        )
 
     ) else (
         if "%ax:~-18%"=="NodeDevLiveServer " (
