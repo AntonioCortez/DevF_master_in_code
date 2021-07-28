@@ -1,0 +1,136 @@
+.container {
+	min-width: 800px !important ;
+	min-height: 455px !important;
+	height: 80vh;
+}
+
+.bots {
+	height: 80%;
+	background-color: rgb(60 67 73);
+	padding-bottom: 65%;
+}
+
+.bots button:hover {
+	background-color: #e3e5e6c9;
+}
+
+.bots button:focus {
+	box-shadow: none;
+}
+
+.bots.lef button {
+	position: relative;
+	left: 40px;
+	text-align: right;
+	z-index: 1;
+}
+
+.bots.righ button {
+	position: relative;
+	left: -40px;
+	text-align: left;
+	z-index: 1;
+}
+
+.opkr {
+	position: absolute;
+	bottom: 30%;
+	width: max-content;
+	font-family: "Press Start 2P";
+	color: #b6b6b6;
+	font-size: 0.5rem;
+}
+
+.lef.opkr {
+	left: 131%;
+}
+
+.righ.opkr {
+	right: 131%;
+}
+
+.marco {
+	position: relative;
+	background-color: rgb(60 67 73);
+}
+
+#screen {
+	width: 85%;
+	height: 90%;
+	background-color: blue;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-family: "Press Start 2P";
+	color: #b6b6b6;
+	padding: 20px;
+	font-size: 1rem;
+}
+
+#logo {
+	position: absolute;
+	bottom: 4px;
+	font-family: "Audiowide";
+	font-size: 28px;
+	font-weight: bolder;
+	color: #c0c0c0;
+	-webkit-text-stroke: 0.01px black;
+	text-shadow: 0 0 2px #ffffff;
+}
+
+.down {
+	height: 20px;
+	background-color: rgb(60 67 73);
+	border-radius: 0 0 80% 80%;
+}
+
+.title {
+	font-size: 1.7rem;
+	margin-top: 6%;
+}
+
+#carouselCards {
+	margin-top: 5%;
+}
+#carouselCards a {
+	text-decoration: none;
+	color: #b6b6b6;
+}
+
+#carouselCards i.fa-credit-card {
+	font-size: 6rem;
+	margin-bottom: 4px;
+}
+
+.pss {
+	background-color: transparent;
+	border: 1px solid #b6b6b691;
+	margin-top: 4%;
+    color: #b6b6b6;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.Wmessage{
+    font-size: .6rem;
+    margin-top: 4%;
+}
+
+#subtitle{
+    font-size: 1.4rem;
+}
+
+#amount{
+    font-size: 1.6rem;
+    margin-top: 10%;
+    color: #dbd7d7;
+}
